@@ -1,5 +1,7 @@
 # hey-react-native
 
+![CI](https://github.com/hikouki/hey-react-native/workflows/CI/badge.svg)
+
 Send message to react-native app from react-native-webview.
 
 If not in the react-native-webview, It won't do anything.
