@@ -12,7 +12,7 @@ const global = window as any;
 describe('HeyReactNative', () => {
   describe('#emit', () => {
     it("don't output debug log", () => {
-      const hey = new HeyReactNative();
+      const hey = new HeyReactNative<'ping'>();
       hey.emit({ event: 'ping', value: 'pong' });
 
       expect(console.log).not.toBeCalled();
