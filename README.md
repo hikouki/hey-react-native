@@ -25,6 +25,15 @@ hey.emit({ event: 'ping', value: 'pong' });
 // => console.log {"event":"ping","value":"pong"}
 ```
 
+If you want to specify a event name.
+
+```typescript
+import { HeyReactNative } from "hey-react-native";
+
+const hey = new HeyReactNative<'ping'>({ debug: true });
+hey.emit({ event: 'ping', value: 'pong' });
+```
+
 ## License
 
 hey-react-native is [MIT licensed](https://github.com/hikouki/hey-react-native/blob/main/LICENSE).
